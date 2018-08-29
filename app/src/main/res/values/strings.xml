@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">TurismoRivas</string>
+    <string name="creditos">
+        \n
+                                          EQUIPO RIVAS\n
+        \n
+        Gonzalo Cuadrado Uriel\n
+   Contact: gcuadrado15@gmail.com\n
+   GitHub: github.com/gcuadrado\n
+   From: Madrid, Spain\n
+\n
+   Aurora Oliveira Garcia\n
+   Contact: auroraoliveiragarcia@gmail.com\n
+   GitHub: github.com/auroraoliveira\n
+   From: Madrid, Spain\n
+\n
+   Hector Benito Zayas\n
+   Contact: hector.benito.zayas@hotmail.com\n
+   GitHub: github.com/XiNoRiVaS\n
+   From: Madrid, Spain\n
+\n
+   Arantxa Aguado\n
+   Contact: arantxaad.89@gmail.com\n
+   GitHub: github.com/ArantxaAD\n
+   From: Madrid, Spain\n
+\n
+   Alejandrio Prior Elvira\n
+   Contact: alexpriorjob@gmail.com\n
+   GitHub: github.com/alexprior5\n
+   From: Madrid, Spain\n
+   \n
+   Borja Torres\n
+   Contact: Borjatorres540@hotmail.com\n
+   From: Madrid, Spain\n
+   \n
+   Nacho Fernandez Sanclemente\n
+   Contact: nachosanclemente@gmail.com\n
+   From: Madrid, Spain\n
+   \n
+   Clara Marcos Domenech\n
+   Contact: Thegreenboness@gmail.com\n
+   GitHub: github.com/claraDomenech\n
+   From: Madrid, Spain\n
+   \n
+   Aitor Apolo Garcia Farfán\n
+   Contact: a.apologf@gmail.com\n
+   From: Madrid, Spain    \n
+   \n
+   Eva Ángel Martínez \n
+   Contact: pequevita1996@hotmail.com  \n
+   From: Madrid, Spain \n
+        \n
+        Victor Tribaldos\n
+   Contact: victor.tm1904@gmail.com\n
+   From: Madrid, Spain\n
+    </string>
+    <string name="nombre">Nombre</string>
+    <string name="fecha">Fecha de inicio</string>
+    <string name="area">Área</string>
+    <string name="direccion">Dirección</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="accesibilidad">Accesibilidad</string>
+    <string name="info_contacto">Contacto</string>
+    <string name="enlace_web">Enlace a su web</string>
+    <string name="info_basica">Información básica</string>
+    <string name="info_detallada">Información detallada</string>
+    <string name="puntuacion">Puntuación</string>
+    <string name="horario">Horario</string>
+    <string name="coste">Coste</string>
+    <string name="categoria">Categoría</string>
+
+    <!--nombres de los puntos de interés -->
+    <string name="auditorio">Auditorio Miguel Ríos</string>
+    <string name="consistorio">Consistorio Rivas</string>
+    <string name="castillo">Castillo de Rivas</string>
+    <string name="cuevas">Cuevas de la G. Civil</string>
+    <string name="ermita">Ermita del Cristo</string>
+    <string name="finca">Finca el Porcal</string>
+    <string name="laguna">Laguna del Campillo</string>
+    <string name="martires">Monumento Mártires</string>
+    <string name="parque">Parque Lineal</string>
+    <string name="pmarcos">Parroquia San Marcos</string>
+    <string name="pmonica">Parroquia Santa Mónica</string>
+    <string name="piruli">Pirulí</string>
+    <string name="puentea">Puente de Arganda</string>
+    <string name="puentedta">Puente del Tren de Arganda</string>
+    <string name="trincheras">Trincheras</string>
+    <string name="yacimiento">Yacimiento Arqueológico</string>
+    <string name="pdi">Puntos de interés</string>
+
+    <string name="aviso">Seleccione un punto de interés. Pulse sobre el nombre para consultar los detalles</string>
+    <string name="bienvenido">¡BIENVENIDO!</string>
+    <string name="aviso_pvez">Es necesario que disponga de conexión a internet para garantizar el correcto funcionamiento de la aplicación</string>
+    <string name="aceptar">ACEPTAR</string>
+
+    <string name="tipodemapa">Tipo de Mapa</string>
+    <string name="hibrido">Híbrido</string>
+    <string name="normal">Normal</string>
+    <string name="satelite">Satélite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

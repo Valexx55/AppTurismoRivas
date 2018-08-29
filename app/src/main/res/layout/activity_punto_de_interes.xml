@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.PuntoDeInteresActivity">
+
+    <!-- PADRE -->
+    <LinearLayout
+        android:id="@+id/linealpadre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- .... PADRE FOTOS .... -->
+
+        <fragment
+            android:name="edu.val.idel.rivas.turismorivas.actividades.GaleriaFragment"
+            android:id="@+id/fragment_fotos"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        </fragment>
+        <!--
+        <LinearLayout
+            android:id="@+id/linealfotos"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/puntodeinteresfotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/titulo_interes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+-->
+        <!-- ... FIN FOTOS ... -->
+
+
+        <!-- ... LINEAR INFO ... -->
+        <LinearLayout
+            android:id="@+id/linealinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textviewinfobasica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_basica"
+                    android:padding="2dp"
+                    android:textColor="#FF2D2D2D"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="10dp"
+                    android:id="@+id/detalles_infobasica"
+                    android:padding="2dp"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:onClick="sacarInfoDetalle"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Más información"
+                        android:padding="1dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:background="#fc0505"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <!-- LINEAL TEXTO -->
+            <LinearLayout
+                android:id="@+id/linealtexto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:id="@+id/linearnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textviewnombre"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/nombre"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_nombre"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewfecha"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/fecha"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_fecha"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearcategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewcategoria"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/categoria"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_categoria"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lineararea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewarea"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/area"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_area"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lineardireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewdireccion"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/direccion"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_direccion"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearlatitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewlatitud"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/latitud"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_latitud"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearlongitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewlongitud"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/longitud"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_longitud"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearaccesibilidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewaccesibilidad"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/accesibilidad"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_accesibilidad"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearinfocontacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewinfocontacto"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/info_contacto"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_infocontacto"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearenlaceweb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewenlaceweb"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/enlace_web"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_enlaceweb"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/rojoRivas"
+                        android:onClick="irAEnlaceweb"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearpuntuacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewpuntuacion"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/puntuacion"
+                        android:padding="3dp"/>
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:scaleX=".6"
+                        android:scaleY=".6"
+                        android:stepSize="1"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearhorario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewhorario"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/horario"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_horario"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearcoste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textviewcoste"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:text="@string/coste"
+                        android:padding="3dp"/>
+                    <TextView
+                        android:id="@+id/detalles_coste"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+            </LinearLayout><!-- FIN TEXTO -->
+        </LinearLayout> <!-- FIN INFO -->
+    </LinearLayout><!-- FIN PADRE -->
+</ScrollView>

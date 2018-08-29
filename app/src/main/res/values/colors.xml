@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fc0505</color>
+    <color name="colorPrimaryDark">#df0606</color>
+    <color name="colorAccent">#f9d60d</color><!--se usa en las estrellas de valoración-->
+    <color name="rojoRivas">#fc0505</color>
+    <color name="colorGris">#949494</color>
+</resources>

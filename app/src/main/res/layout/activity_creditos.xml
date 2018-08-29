@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".actividades.CreditosActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cajatext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:isScrollContainer="true"
+                android:text="@string/creditos" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/rivas_vaciamadrid"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitXY"
+                android:onClick="irARivas">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/idel"
+                android:scaleType="fitXY"
+
+                android:onClick="irAIdel">
+
+            </ImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+
+            <ImageButton
+                android:id="@+id/boton_mojito"
+                android:src="@drawable/logo_coc_3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:longClickable="true">
+            </ImageButton>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

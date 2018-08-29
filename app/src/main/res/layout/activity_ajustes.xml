@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.AjustesActivity">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="casilla_marcada"
+        android:text="Saltar pantalla de inicio"
+        android:textSize="16sp"
+        android:buttonTint="#FC0505"
+        android:id="@+id/mostrar_inicio"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:onClick="casilla_marcada"
+        android:text="Saltar animación"
+        android:textSize="16sp"
+        android:buttonTint="#FC0505"
+        android:id="@+id/mostrar_spalsh"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.val.idel.rivas.turismorivas.actividades.InicioActivity"
+    android:background="@drawable/fondo_inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo_png"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        >
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:text="Ir"
+            android:id="@+id/ir_aplicacion"
+            android:onClick="boton_tocado"
+            android:backgroundTint="#fdfdfd"
+            android:textColor="#fc0505"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:text="Créditos"
+            android:id="@+id/ir_creditos"
+            android:onClick="boton_tocado"
+            android:backgroundTint="#fc0505"
+            android:layout_marginLeft="50dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_gravity="center|top"
+        android:layout_weight="1"
+        android:paddingBottom="30dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No volver a mostrar"
+            android:textSize="20dp"
+            android:buttonTint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:onClick="noMostrar"
+            android:id="@+id/volver_mostrar"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/pdi">
+        <menu>
+            <item
+                android:orderInCategory="0"
+                android:title="@string/auditorio" />
+            <item
+                android:orderInCategory="1"
+                android:title="@string/consistorio" />
+            <item
+                android:orderInCategory="2"
+                android:title="@string/castillo" />
+            <item
+                android:orderInCategory="3"
+                android:title="@string/cuevas" />
+            <item
+                android:orderInCategory="4"
+                android:title="@string/ermita" />
+            <item
+                android:orderInCategory="5"
+                android:title="@string/finca" />
+            <item
+                android:orderInCategory="6"
+                android:title="@string/laguna" />
+            <item
+                android:orderInCategory="7"
+                android:title="@string/martires" />
+            <item
+                android:orderInCategory="8"
+                android:title="@string/parque" />
+            <item
+                android:orderInCategory="9"
+                android:title="@string/pmarcos" />
+            <item
+                android:orderInCategory="10"
+                android:title="@string/pmonica" />
+            <item
+                android:orderInCategory="11"
+                android:title="@string/piruli" />
+            <item
+                android:orderInCategory="12"
+                android:title="@string/puentea" />
+            <item
+                android:orderInCategory="13"
+                android:title="@string/puentedta" />
+            <item
+                android:orderInCategory="14"
+                android:title="@string/trincheras" />
+            <item
+                android:orderInCategory="15"
+                android:title="@string/yacimiento" />
+        </menu>
+    </item>
+
+    <item android:title="@string/tipodemapa">
+        <menu>
+            <item
+                android:orderInCategory="16"
+                android:title="@string/hibrido"
+                android:icon="@drawable/ico_tmapa"/>
+            <item
+                android:orderInCategory="17"
+                android:title="@string/normal"
+                android:icon="@drawable/ico_tmapa"/>
+            <item
+                android:orderInCategory="18"
+                android:title="@string/satelite"
+                android:icon="@drawable/ico_tmapa"/>
+
+        </menu>
+    </item>
+
+</menu>

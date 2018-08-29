@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item android:drawable="@drawable/rivas_1" android:duration="1700" />
+    <item android:drawable="@drawable/rivas_2" android:duration="1700" />
+    <item android:drawable="@drawable/rivas_3" android:duration="1700" />
+    <item android:drawable="@drawable/rivas_4" android:duration="1700" />
+    <item android:drawable="@drawable/rivas_5" android:duration="2000" />
+</animation-list>
